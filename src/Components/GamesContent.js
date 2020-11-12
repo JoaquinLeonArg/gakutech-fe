@@ -1,6 +1,6 @@
 import React from 'react';
 
-export class Content extends React.Component {
+export class GamesContent extends React.Component {
     render() {
         return (this.props.game)? (
             <div className='content'>
