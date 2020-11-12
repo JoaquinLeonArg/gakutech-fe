@@ -210,6 +210,7 @@ html, body {
 	text-decoration: none;
   text-shadow: 0px 1px 0px var(--alt);
   margin-right: 16px;
+  margin-bottom: 32px;
 }
 
 .button:active {
