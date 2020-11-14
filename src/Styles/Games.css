@@ -8,6 +8,7 @@
     font-family: 'Changa', sans-serif;
     color: var(--light);
     z-index: 2;
+    overflow-y: auto;
   }
   
   .content-title {
@@ -58,6 +59,7 @@
       text-decoration: none;
     text-shadow: 0px 1px 0px var(--alt);
     margin-right: 16px;
+    margin-bottom: 32px;
   }
   
   .button:active {
