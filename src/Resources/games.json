@@ -4,21 +4,52 @@
         "background": "bunnyloop-bg.jpg",
         "image": "bunnyloop.gif",
         "shortDescription": "About rabbits and the cycle of life.",
-        "longDescription": "Made in 72 hours using Godot Engine for Ludum Dare 47: Stuck in a loop.",
-        "cta_text": "Play online",
-        "cta_link": "https://games.gakutech.com/BunnyLoop.html",
-        "other_text": "Source code",
-        "other_link": "https://github.com/JoaquinLeonArg/ld47"
+        "longDescription": "A short exploration game where you control a bunny trying to survive.\nFind ancient obelisks to get evolution points and escape the forest.",
+        "buttons": [
+            {
+                "text": "Play online",
+                "link": "https://games.gakutech.com/BunnyLoop.html",
+                "cta": true
+            },
+            {
+                "text": "Source",
+                "link": "https://github.com/JoaquinLeonArg/ld47",
+                "cta": false
+            }
+        ],
+        "badges": [
+            {
+                "icon": "ldjam",
+                "text": "Ludum Dare 47: Stuck in a Loop"
+            },
+            {
+                "icon": "godot",
+                "text": "Godot Engine"
+            }
+        ]
     },
     {
         "name": "Electro Service 2",
         "background": "electroservice2-bg.jpg",
         "image": "electroservice2.png",
         "shortDescription": "Electric Boogaloo Edition.",
-        "longDescription": "Made in 72 hours using Python for Ludum Dare 46: Keep it Alive.",
-        "cta_text": "Download (Windows)",
-        "cta_link": "https://fedoraarg.itch.io/electroservice",
-        "other_text": "Download (Linux)",
-        "other_link": "https://fedoraarg.itch.io/electroservice"
+        "longDescription": "Try to keep your electronic friend alive for as long as you can!",
+        "buttons": [
+            {
+                "text": "Download",
+                "link": "https://fedoraarg.itch.io/electroservice",
+                "cta": true
+            }
+        ],
+        "badges": [
+            {
+                "icon": "ldjam",
+                "text": "Ludum Dare 46: Keep it Alive"
+            },
+            {
+                "icon": "python",
+                "text": "Python 3 (Pygame)"
+            }
+        ]
     }
 ]

@@ -1,28 +1,9 @@
 @import url('Base.css');
 
-.app {
-  height: 100%;
-  display: grid;
-  grid-template-columns: 35vw 1fr;
-  user-select: none;
-  background-color: black;
-}
-
-.page-background {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0.1;
-  transition: 2s;
-  z-index: 1;
-}
-
 /* SIDEBAR */
-
 .sidebar {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   grid-column: 1;
   height: 100vh;
   position: relative;
@@ -30,70 +11,63 @@
   transition: .3s;
 }
 
-.sidebar-wide {
-  grid-column: 1 ;
-}
-
 .sidebar-bg {
-  display: flex;
   position: absolute;
   flex-direction: column;
   left: 0;
   top: 0;
   bottom: 0;
-  background-color: var(--dark40);
-}
-
-.b1 {
+  background-color: var(--dark);
   right: 0px;
-}
-
-.b2 {
-  right: 16px;
-}
-
-.b3 {
-  right: 32px;
 }
 
 .sidebar-container {
   /* Dark background */
   position: absolute;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   width: 100%;
   height: 100%;
-
-  /* ---- */
-  padding: 16px 32px 32px 32px;
 }
 
-.sidebar-back {
-  font-family: 'Be Vietnam', sans-serif;
-  font-size: 1.3vw;
-  padding-left: 2vw;
-  padding-top: 1vh;
-  font-weight: 400;
-  color: var(--alt);
+.logo-container {
   display: flex;
-  text-decoration: none;
-  transition: .3s;
+  align-self: flex-start;
+  justify-items: center;
+  flex-direction: column;
+  z-index: 1;
+  width: 100%;
+  justify-self: center;
 }
 
-.sidebar-back:hover {
-  color: var(--accent);
+.logo {
+  display: flex;
+  width: 6rem;
+  height: 6rem;
+  align-self: center;
+  margin-top: 24px;
+  position: relative;
 }
 
-.sidebar-title {
+.logo-text {
   font-family: 'Be Vietnam', sans-serif;
-  font-size: 7vw;
-  font-weight: 700;
-  line-height: .68;
-  color: var(--accent);
-  
-  margin-top: 6vh;
-  padding-left: 2vw;
-  margin-bottom: 16vh;
+  font-size: 1.2rem;
+  color: var(--accent-variation);
+  text-align: center;
+}
+
+.sidebar-icon {
+  font-size: 4rem;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  color: var(--alt2);
+  transition: .2s;
+}
+
+.sidebar-icon:hover {
+  color: var(--accent-variation);
 }
 
 .gamelist {

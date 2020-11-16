@@ -1,16 +1,29 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
+import { MdVideogameAsset, MdFace, MdRateReview } from 'react-icons/md';
+import SidebarLink from './SidebarLink'
 
 export class Sidebar extends React.Component {
     render() {
         return (
-            <div className={'sidebar' + ((this.props.wide===true) ? 'sidebar-wide' : '')}>
-                <div className='sidebar-bg b1'/>
-                <div className='sidebar-bg b2'/>
-                <div className='sidebar-bg b3'/>
+            <div className='sidebar'>
+                <div className='sidebar-bg'/>
+                <div className='logo-container'>
+                    <img className='logo' src='/logo.png' alt='G'/>
+                    <div className='logo-text'>Gakutech</div>
+                </div>
                 <div className='sidebar-container'>
-                    <a href='https://gakutech.com' className='sidebar-back'>Back to Gakutech's homepage</a>
-                    <p className='sidebar-title'>Our<br/>games</p>
-                    { this.props.children }
+                    <SidebarLink><Link to='/'>
+                        <MdRateReview className='sidebar-icon'></MdRateReview>
+                    </Link></SidebarLink>
+
+                    <SidebarLink><Link to='/games'>
+                        <MdVideogameAsset className='sidebar-icon'></MdVideogameAsset>
+                    </Link></SidebarLink>
+
+                    <SidebarLink><Link to='/about'>
+                        <MdFace className='sidebar-icon'></MdFace>
+                    </Link></SidebarLink>
                 </div>
             </div>
         )

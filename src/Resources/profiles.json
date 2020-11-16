@@ -1,0 +1,51 @@
+[
+    {
+        "name": "Joaquín León",
+        "image": "profile_data/jleon.png",
+        "description": "Some really cool and long description about myself so Google can hire me and I can become a millionaire!",
+        "links": [
+            {
+                "icon": "github",
+                "text": "Github",
+                "target": "https://github.com/joaquinleonarg"
+            },
+            {
+                "icon": "linkedin",
+                "text": "Linkedin",
+                "target": "linkedin.com/jleon"
+            },
+            {
+                "icon": "email",
+                "text": "Email",
+                "target": "mailto:leonjoaquin77@gmail.com"
+            }
+        ]
+    },
+    {
+        "name": "Angela Cobos",
+        "image": "profile_data/acobos.png",
+        "description": "Some other description about how Angela loves nature and how bit of a Game of Thrones fan she is.",
+        "links": [
+            {
+                "icon": "github",
+                "text": "Github",
+                "target": "https://github.com/joaquinleonarg"
+            },
+            {
+                "icon": "linkedin",
+                "text": "Linkedin",
+                "target": "linkedin.com/jleon"
+            },
+            {
+                "icon": "email",
+                "text": "Email",
+                "target": "mailto:leonjoaquin77@gmail.com"
+            },
+            {
+                "icon": "artstation",
+                "text": "Artstation",
+                "target": "#"
+            }
+        ]
+    }
+]

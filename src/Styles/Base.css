@@ -3,19 +3,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Changa:wght@400;500;600;700&family=Montserrat&family=Staatliches&display=swap');
 
 :root {
-  --dark: rgba(28, 29, 33, 1);
-  --dark80: rgba(28, 29, 33, .8);
-  --dark60: rgba(28, 29, 33, .6);
-  --dark40: rgba(28, 29, 33, .4);
-  --accent: rgba(247, 92, 3, 1);
-  --accent-variation: rgba(227, 72, 3, 1);
-  --alt: rgba(117, 109, 84, 1);
-  --alt80: rgba(117, 109, 84, .8);
-  --alt60: rgba(117, 109, 84, .6);
-  --alt40: rgba(117, 109, 84, .4);
-  --alt2: rgba(80, 80, 65, 1);
-  --alt3: rgba(70, 70, 60, 1);
-  --light: rgba(197, 216, 209, 1);
+  --dark: #0D1B2A;
+  --accent: #E1515F;
+  --accent-dark: #69121A;
+  --accent-variation: #F7B264;
+  --alt: #1B263B;
+  --alt2: #778DA9;
+  --alt3: #415A77;
+  --alt4: #050A10;
+  --light: #E0E1DD;
+  --bg: #030128;
 }
 
 * {
@@ -25,7 +22,24 @@
 }
 
 html, body {
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
-  background-color: black;
+  background-color: var(--alt);
+}
+
+.app {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 8rem 1fr;
+  user-select: none;
+}
+
+.content {
+  grid-column: 2;
+  margin: 1rem;
+  font-family: 'Changa', sans-serif;
+  color: var(--light);
+  z-index: 2;
+  overflow-y: auto;
+  padding: 20px;
 }
