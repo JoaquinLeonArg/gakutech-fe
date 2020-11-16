@@ -3,36 +3,36 @@ import React from 'react'
 import './Styles/Sidebar.css'
 import { GamesPage } from './Pages/GamesPage';
 import { AboutPage } from './Pages/AboutPage.js';
-import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+import { Route, Switch, useLocation } from 'react-router-dom';
 import Particles from 'react-particles-js';
+import { AnimatePresence } from 'framer-motion';
 
-export class Main extends React.Component {
-    render() {
-        return (
-            <Router>
-                <BgParticles/>
-                <div className='app'> 
-                    <Sidebar/>
-                    <div className='content'>
-                        <Switch>
-                            <Route path='/games' exact>
-                                <GamesPage/>
-                            </Route>
+export function Main() {
+    const location = useLocation()
+    return (
+        <div className='app'> 
+            <BgParticles/>
+            <Sidebar/>
+            <div className='content'>
+                <AnimatePresence>
+                    <Switch location={location} key={location.pathname}>
+                        <Route path='/games' exact>
+                            <GamesPage/>
+                        </Route>
+                        
+                        <Route path='/about' exact>
+                            <AboutPage/>
+                        </Route>
+
+                        <Route path='/' exact>
+                            Home
                             
-                            <Route path='/about' exact>
-                                <AboutPage/>
-                            </Route>
-
-                            <Route path='/' exact>
-                                Home
-                                
-                            </Route>
-                        </Switch>
-                    </div>
-                </div>
-            </Router>
-        )
-    }
+                        </Route>
+                    </Switch>
+                </AnimatePresence>
+            </div>
+        </div>
+    )
 }
 
 

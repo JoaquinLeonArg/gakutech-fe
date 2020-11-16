@@ -1,20 +1,22 @@
+import React from 'react'
+import { Badges } from '../Utils/Badges'
+import { pageVariants, pageStyle, pageTransition } from '../Utils/Animations'
+import { motion } from 'framer-motion'
 import '../Styles/Games.css'
 import '../Styles/Cards.css'
 import '../Styles/Tooltip.css'
-import React from 'react'
 import games from '../Resources/games.json'
-import { Badges } from '../Utils/Badges'
 
 export class GamesPage extends React.Component {
   render() {
     return (
-      <div>
+      <motion.div initial='initial' animate='in' exit='out' variants={pageVariants} style={pageStyle} transition={pageTransition}>
         { 
           games.map( (game) => (
             <GameCard game={game}/>
           ))
         }
-      </div>
+      </motion.div>
     )
   }
 }

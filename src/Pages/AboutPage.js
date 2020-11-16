@@ -1,16 +1,18 @@
 import React from 'react'
 import { SocialMedia } from '../Utils/SocialMedia'
+import { pageVariants, pageStyle, pageTransition } from '../Utils/Animations'
+import { motion } from 'framer-motion'
 import '../Styles/About.css'
 import profiles from '../Resources/profiles.json'
 
 export class AboutPage extends React.Component {
   render() {
     return (
-      <div className='about-container'>
+      <motion.div className='about-container' initial='initial' animate='in' exit='out' variants={pageVariants} style={pageStyle} transition={pageTransition}>
         { profiles.map( profile => (
           <Profile profile={profile}></Profile>
         ))}
-      </div>
+      </motion.div>
     )
   }
 }
