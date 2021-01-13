@@ -1,32 +1,13 @@
 import React, { Component } from 'react'
 import '../Styles/Tooltip.css'
 
+
 export class SidebarLink extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            tooltipVisible: false
-        }
-        this.onMouseEnter = this.onMouseEnter.bind(this)
-        this.onMouseLeave = this.onMouseLeave.bind(this)
-    }
-
-    onMouseEnter() {
-        this.setState({tooltipVisible: true})
-    }
-
-    onMouseLeave() {
-        this.setState({tooltipVisible: false})
-    }
-
     render() {
         return (
-            <div onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave}>
+            <span className='tooltip-big' data-tooltip={this.props.name} data-flow='right'>
                 { this.props.children }
-                { this.state.tooltipVisible ? (
-                null /* TODO: Add tooltip on hover */ )
-                : null }
-            </div>
+            </span>
         )
     }
 }

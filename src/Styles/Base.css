@@ -22,24 +22,35 @@
 }
 
 html, body {
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
   background-color: var(--alt);
 }
 
 .app {
-  height: 100vh;
   display: grid;
-  grid-template-columns: 8rem 1fr;
+  grid-template-columns: 4% 1fr;
   user-select: none;
 }
 
 .content {
   grid-column: 2;
-  margin: 1rem;
   font-family: 'Changa', sans-serif;
   color: var(--light);
   z-index: 2;
   overflow-y: auto;
-  padding: 20px;
+  padding: 12px;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 768px) {
+  .app {
+    grid-template-rows: 8rem 1fr;
+    grid-template-columns: 0;
+  }
+  
+  .content {
+    grid-row: 2;
+    padding: 0;
+  }
 }

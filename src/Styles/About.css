@@ -3,15 +3,16 @@
 .about-container {
   display: flex;
   flex-direction: row;
-  padding: 5rem;
+  height: 100%;
 }
 
 .profile {
-  margin: 5rem;
+  margin: 0 64px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-items: center;
+  align-self: center;
 }
 
 .profile-image {
@@ -46,4 +47,19 @@
   color: var(--accent);
   line-height: 1;
   transition: .2s;
+}
+
+@media only screen and (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .profile {
+    margin: 48px 64px;
+  }
+
+  .profile-description {
+    font-size: 1.4rem;
+    height: auto;
+  }
 }

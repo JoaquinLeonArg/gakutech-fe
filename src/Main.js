@@ -1,8 +1,9 @@
-import { Sidebar } from './Components/Sidebar.js'
+import { Sidebar } from './Components/Sidebar'
 import React from 'react'
 import './Styles/Sidebar.css'
 import { GamesPage } from './Pages/GamesPage';
-import { AboutPage } from './Pages/AboutPage.js';
+import { AboutPage } from './Pages/AboutPage';
+import { HomePage } from './Pages/HomePage';
 import { Route, Switch, useLocation } from 'react-router-dom';
 import Particles from 'react-particles-js';
 import { AnimatePresence } from 'framer-motion';
@@ -12,10 +13,13 @@ export function Main() {
     return (
         <div className='app'> 
             <BgParticles/>
+            <BgParticles2/>
+            <BgParticles3/>
             <Sidebar/>
             <div className='content'>
-                <AnimatePresence>
+                <AnimatePresence exitBeforeEnter>
                     <Switch location={location} key={location.pathname}>
+
                         <Route path='/games' exact>
                             <GamesPage/>
                         </Route>
@@ -25,9 +29,9 @@ export function Main() {
                         </Route>
 
                         <Route path='/' exact>
-                            Home
-                            
+                            <HomePage/>
                         </Route>
+
                     </Switch>
                 </AnimatePresence>
             </div>
@@ -43,28 +47,85 @@ class BgParticles extends React.Component {
         params={{
             "particles": {
                 "number": {
-                    "value": 20,
+                    "value": 30,
                     "density": {
                         "enable": true,
                         "value_area": 500
                     }
                 },
                 "line_linked": {
-                    "enable": true,
-                    "opacity": 0.03
+                    "enable": false
                 },
                 "move": {
-                    radius: 5
+                    "radius": 1,
                 },
                 "size": {
-                    "value": 1.8
+                    "value": 1
                 },
                 "opacity": {
-                    "anim": {
+                    "value": 1
+                }
+            },
+            "retina_detect": true
+        }} />
+    }
+}
+
+class BgParticles2 extends React.Component {
+    render() {
+        return <Particles
+        style={{position: 'absolute'}}
+        params={{
+            "particles": {
+                "number": {
+                    "value": 15,
+                    "density": {
                         "enable": true,
-                        "speed": 1,
-                        "opacity_min": 0.06
+                        "value_area": 500
                     }
+                },
+                "line_linked": {
+                    "enable": false
+                },
+                "move": {
+                    "radius": 1
+                },
+                "size": {
+                    "value": 3
+                },
+                "opacity": {
+                    "value": 0.1
+                }
+            },
+            "retina_detect": true
+        }} />
+    }
+}
+
+class BgParticles3 extends React.Component {
+    render() {
+        return <Particles
+        style={{position: 'absolute'}}
+        params={{
+            "particles": {
+                "number": {
+                    "value": 10,
+                    "density": {
+                        "enable": true,
+                        "value_area": 500
+                    }
+                },
+                "line_linked": {
+                    "enable": false
+                },
+                "move": {
+                    "radius": 10
+                },
+                "size": {
+                    "value": 6
+                },
+                "opacity": {
+                    "value": 0.01
                 }
             },
             "retina_detect": true

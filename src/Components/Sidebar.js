@@ -13,15 +13,15 @@ export class Sidebar extends React.Component {
                     <div className='logo-text'>Gakutech</div>
                 </div>
                 <div className='sidebar-container'>
-                    <SidebarLink><Link to='/'>
+                    <SidebarLink name='Home'><Link to='/'>
                         <MdRateReview className='sidebar-icon'></MdRateReview>
                     </Link></SidebarLink>
 
-                    <SidebarLink><Link to='/games'>
+                    <SidebarLink name='Games'><Link to='/games'>
                         <MdVideogameAsset className='sidebar-icon'></MdVideogameAsset>
                     </Link></SidebarLink>
 
-                    <SidebarLink><Link to='/about'>
+                    <SidebarLink name='About us'><Link to='/about'>
                         <MdFace className='sidebar-icon'></MdFace>
                     </Link></SidebarLink>
                 </div>
