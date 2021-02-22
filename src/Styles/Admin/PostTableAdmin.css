@@ -1,0 +1,23 @@
+@import url('BaseAdmin.css');
+
+.post-table {
+  font-family: 'Changa', sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.post-table th {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: var(--add);
+  color: var(--light);
+  margin: 15px;
+}
+
+.post-table th,
+td {
+  text-align: left;
+  color: var(--light);
+  padding: 8px;
+  border-bottom: 3px solid var(--details);
+}

@@ -1,0 +1,47 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@400;500;600;700&family=Montserrat&family=Staatliches&display=swap');
+
+:root {
+  --dark: #0D1B2A;
+  --accent: #E1515F;
+  --accent-dark: #69121A;
+  --accent-variation: #F7B264;
+  --alt: #221D23;
+  /*pasar este color a BaseAdmin.css*/
+  --alt2: #778DA9;
+  --alt3: #415A77;
+  --alt4: #050A10;
+  --light: #E0E1DD;
+  --bg: #030128;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100vh;
+  /* overflow: hidden; */
+  background-color: var(--alt);
+}
+
+.app {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 8rem 1fr;
+  user-select: none;
+}
+
+.content {
+  grid-column: 2;
+  margin: 1rem;
+  font-family: 'Changa', sans-serif;
+  color: var(--light);
+  z-index: 2;
+  overflow-y: auto;
+  padding: 20px;
+}

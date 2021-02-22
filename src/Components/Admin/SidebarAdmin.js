@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import { MdVideogameAsset, MdFace, MdRateReview } from 'react-icons/md';
-import SidebarLink from './SidebarLink'
+import SidebarAdminLink from '../Admin/SidebarAdminLink';
+import '../../Styles/Admin/SidebarAdmin.css';
 
-export class Sidebar extends React.Component {
+export class SidebarAdmin extends React.Component {
     render() {
         return (
             <div className='sidebar'>
@@ -13,17 +14,17 @@ export class Sidebar extends React.Component {
                     <div className='logo-text'>Gakutech</div>
                 </div>
                 <div className='sidebar-container'>
-                    <SidebarLink><Link to='/'>
+                    <SidebarAdminLink><Link to='/'>
                         <MdRateReview className='sidebar-icon'></MdRateReview>
-                    </Link></SidebarLink>
+                    </Link></SidebarAdminLink>
 
-                    <SidebarLink><Link to='/games'>
+                    <SidebarAdminLink><Link to='/games'>
                         <MdVideogameAsset className='sidebar-icon'></MdVideogameAsset>
-                    </Link></SidebarLink>
+                    </Link></SidebarAdminLink>
 
-                    <SidebarLink><Link to='/about'>
+                    <SidebarAdminLink><Link to='/about'>
                         <MdFace className='sidebar-icon'></MdFace>
-                    </Link></SidebarLink>
+                    </Link></SidebarAdminLink>
                 </div>
             </div>
         )

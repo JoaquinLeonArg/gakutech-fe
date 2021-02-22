@@ -1,0 +1,87 @@
+@import url('Base.css');
+
+/* CONTENT */
+.content-title {
+  font-size: 5.5vw;
+  line-height: 0.8;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-shadow: 2px 2px black;
+}
+  
+.content-short-description {
+  font-size: 1.6vw;
+  font-weight: 500;
+  text-shadow: 1px 1px black;
+}
+  
+.content-long-description {
+  font-size: 1.5rem;
+  line-height: 1;
+  padding-bottom: 1vw;
+  margin-left: 32px;
+  margin-right: 32px;
+  font-weight: 500;
+  text-shadow: 1px 1px black;
+}
+  
+.content-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 30rem;
+  padding-top: 1vw;
+  padding-bottom: 3vw;
+}
+  
+.button {
+    box-shadow: 3px 4px 0px 0px var(--dark);
+  border-radius: 5px;
+  width: 16vw;
+  height: 6vh;
+    display: inline-block;
+    cursor: pointer;
+    color: var(--light);
+  font-size: 1.8vh;
+  text-align: center;
+    font-weight: 800;
+    padding-top: 1.3vh;
+    text-decoration: none;
+  text-shadow: 0px 1px 0px var(--alt);
+  margin-right: 16px;
+  margin-bottom: 32px;
+}
+
+.button:active {
+    position:relative;
+    top:1px;
+}
+
+.cta {
+  background: linear-gradient(to bottom, var(--accent) 5%, var(--accent-variation) 100%);
+  border: 1px solid var(--accent-variation);
+    background-color: var(--accent);
+}
+
+.cta:hover {
+    background:linear-gradient(to bottom, var(--accent-variation) 5%, var(--dark40) 100%);
+    background-color:var(--accent);
+}
+
+.normal {
+  background: linear-gradient(to bottom, var(--alt3) 5%, var(--alt2) 100%);
+  border: 1px solid var(--dark80);
+    background-color: var(--dark40);
+}
+
+.normal:hover {
+    background:linear-gradient(to bottom, var(--alt3) 5%, var(--dark40) 100%);
+    background-color:var(--alt2);
+}
+
+.buttons {
+  margin-top: 6vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

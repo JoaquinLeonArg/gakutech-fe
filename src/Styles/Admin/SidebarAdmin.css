@@ -1,0 +1,104 @@
+@import url('BaseAdmin.css');
+
+/* SIDEBAR */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1;
+  height: 100vh;
+  position: relative;
+  z-index: 10;
+  transition: .3s;
+}
+
+.sidebar-bg {
+  position: absolute;
+  flex-direction: column;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: var(--dark);
+  right: 0px;
+}
+
+.sidebar-container {
+  /* Dark background */
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.logo-container {
+  display: flex;
+  align-self: flex-start;
+  justify-items: center;
+  flex-direction: column;
+  z-index: 1;
+  width: 100%;
+  justify-self: center;
+}
+
+.logo {
+  display: flex;
+  width: 6rem;
+  height: 6rem;
+  align-self: center;
+  margin-top: 24px;
+  position: relative;
+}
+
+.logo-text {
+  font-family: 'Be Vietnam', sans-serif;
+  font-size: 1.2rem;
+  color: var(--accent-variation);
+  text-align: center;
+}
+
+.sidebar-icon {
+  display: block;
+  font-size: 4rem;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  color: var(--alt2);
+  transition: .2s;
+}
+
+.sidebar-icon:hover {
+  color: var(--accent-variation);
+}
+
+.gamelist {
+  font-family: 'Be Vietnam', sans-serif;
+  font-size: 2vw;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.5;
+  list-style-type: none;
+  padding-left: 1vw;
+  grid-column: 1;
+}
+
+.gamelist-item {
+  transition: .3s;
+}
+
+.gamelist-link {
+  text-decoration: none;
+  color: var(--light);
+  transition: .3s;
+  cursor: pointer;
+  padding-left: 1vw;
+}
+
+.gamelist-link:hover {
+  color: var(--accent);
+}
+
+.gamelist-toggled {
+  padding-left: 1vw;
+  background-color: var(--alt40);
+}

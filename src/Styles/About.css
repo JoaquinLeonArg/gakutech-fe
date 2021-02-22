@@ -1,0 +1,49 @@
+@import url('Base.css');
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  padding: 5rem;
+}
+
+.profile {
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.profile-image {
+  width: 15rem;
+  height: 15rem;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.profile-name {
+  font-size: 4rem;
+  font-weight: 600;
+  color: var(--accent-variation)
+}
+
+.profile-description {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  text-align: center;
+  height: 8rem;
+}
+
+.profile-links {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+.profile-link {
+  margin: 8px;
+  font-size: 2rem;
+  color: var(--accent);
+  line-height: 1;
+  transition: .2s;
+}

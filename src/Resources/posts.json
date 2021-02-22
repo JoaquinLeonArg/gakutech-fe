@@ -1,0 +1,16 @@
+[{
+  "name": "Example",
+  "shortDescription": "About rabbits and the cycle of life.",
+  "longDescription": "A short exploration game where you control a bunny trying to survive.\nFind ancient obelisks to get evolution points and escape the forest.",
+  "badges": [
+      {
+          "icon": "ldjam",
+          "text": "Ludum Dare 47: Stuck in a Loop"
+      },
+      {
+          "icon": "godot",
+          "text": "Godot Engine"
+      }
+  ]
+}
+]
