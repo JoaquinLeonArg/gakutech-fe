@@ -1,0 +1,40 @@
+@import url('BaseAdmin.css');
+
+.icon-button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.edit-button {
+  color: var(--edit)
+}
+
+.edit-button:hover {
+  color: var(--edit-hover);
+}
+
+.delete-button {
+  color: var(--delete);
+}
+
+.delete-button:hover {
+  color: var(--delete-hover);
+}
+
+.add-button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  color: var(--add);
+  text-align: center;
+  text-decoration: none;
+}
+
+.add-button:hover {
+  color: var(--add-hover);
+}

@@ -8,13 +8,20 @@
   --accent-dark: #69121A;
   --accent-variation: #F7B264;
   --alt: #221D23;
-  /*pasar este color a BaseAdmin.css*/
   --alt2: #778DA9;
   --alt3: #415A77;
   --alt4: #050A10;
-  --light: #E0E1DD;
+  --light: #F4F1DE;
   --bg: #030128;
+  --edit: #2364AA;
+  --edit-hover: #78ACE3;
+  --delete: #BC4524;
+  --delete-hover: #E07A5F;
+  --add: #31572C;
+  --add-hover: #81B29A;
+  --details: #F2CC8F;
 }
+
 
 * {
   box-sizing: border-box;
@@ -25,7 +32,6 @@
 html,
 body {
   height: 100vh;
-  /* overflow: hidden; */
   background-color: var(--alt);
 }
 
