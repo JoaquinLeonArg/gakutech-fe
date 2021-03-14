@@ -106,11 +106,17 @@
 }
 
 @media only screen and (max-width: 768px) {
-  [data-tooltip] {
-    visibility: hidden;
+  [data-tooltip][data-flow="right"]::before {
+    top: 100%;
+    border-top-width: 0;
+    border-bottom-color: var(--accent);
   }
-
-  [data-tooltip] * {
-    visibility: visible;
+  [data-tooltip][data-flow="right"]::after {
+    top: calc(100% + 5px);
+  }
+  [data-tooltip][data-flow="right"]::before, [data-tooltip][data-flow="right"]::after {
+    left: 50%;
+    -webkit-transform: translate(-50%, 8px);
+            transform: translate(-50%, 8px);
   }
 }

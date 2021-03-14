@@ -6,7 +6,7 @@ export class HomePage extends React.Component {
     render() {
         return (
             <motion.div initial='initial' animate='in' exit='out' variants={pageVariants} style={pageStyle} transition={pageTransition}>
-                <h1>Home page under construction...</h1>
+                <h1 style={{margin:'10%'}}>Home page under construction...</h1>
             </motion.div>
         )
     }

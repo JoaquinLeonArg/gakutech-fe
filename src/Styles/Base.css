@@ -21,7 +21,8 @@
   padding: 0;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   overflow: hidden;
   background-color: var(--alt);
@@ -29,7 +30,7 @@ html, body {
 
 .app {
   display: grid;
-  grid-template-columns: 4% 1fr;
+  grid-template-columns: 8rem 1fr;
   user-select: none;
 }
 
@@ -43,14 +44,23 @@ html, body {
   height: 100vh;
 }
 
+.mobile-footer {
+  height: 0;
+}
+
 @media only screen and (max-width: 768px) {
   .app {
-    grid-template-rows: 8rem 1fr;
+    grid-template-rows: 5rem 1fr;
     grid-template-columns: 0;
   }
-  
+
   .content {
     grid-row: 2;
     padding: 0;
+    margin-bottom: 5rem;
+  }
+
+  .mobile-footer {
+    height: 8rem;
   }
 }

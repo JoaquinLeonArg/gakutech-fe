@@ -1,7 +1,7 @@
 [
     {
         "name": "Joaquín León",
-        "image": "profile_data/jleon.png",
+        "image": "profile_data/jleon.jpg",
         "description": "Some really cool and long description about myself so Google can hire me and I can become a millionaire!",
         "links": [
             {
@@ -23,7 +23,7 @@
     },
     {
         "name": "Angela Cobos",
-        "image": "profile_data/acobos.png",
+        "image": "profile_data/acobos.jpg",
         "description": "Some other description about how Angela loves nature and how bit of a Game of Thrones fan she is.",
         "links": [
             {

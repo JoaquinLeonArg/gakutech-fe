@@ -15,6 +15,12 @@
   align-self: center;
 }
 
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .profile-image {
   width: 15rem;
   height: 15rem;
@@ -25,12 +31,15 @@
 .profile-name {
   font-size: 4rem;
   font-weight: 600;
+  line-height: 1.05;
+  margin-bottom: 24px;
+  text-align: center;
   color: var(--accent-variation)
 }
 
 .profile-description {
   font-size: 1.5rem;
-  line-height: 1.2;
+  line-height: 1.15;
   text-align: center;
   height: 8rem;
 }
@@ -50,16 +59,41 @@
 }
 
 @media only screen and (max-width: 768px) {
+
+  .profile-header {
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 12px;
+  }
+
+  .profile-image {
+    width: 5rem;
+    height: 5rem;
+    margin-right: 16px;
+  }
+  
+  .profile-name {
+    font-size: 2.4rem;
+    margin-left: 16px;
+    margin-bottom: 16px;
+  }
+
   .about-container {
+    margin-top: 3rem;
     flex-direction: column;
+    height: auto;
+    align-items: center;
   }
 
   .profile {
-    margin: 48px 64px;
+    margin-top: 24px;
+    margin-bottom: 24px;
   }
 
   .profile-description {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     height: auto;
+    margin-bottom: 2px;
   }
 }

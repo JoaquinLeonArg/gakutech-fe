@@ -15,6 +15,7 @@ export class GamesPage extends React.Component {
             <GameCard game={game}/>
           ))
         }
+        <div className='mobile-footer' />
       </motion.div>
     )
   }

@@ -1,15 +1,22 @@
 import React, { Component } from 'react'
+import { useMediaPredicate } from "react-media-hook";
 import '../Styles/Tooltip.css'
 
 
-export class SidebarLink extends Component {
-    render() {
+export function SidebarLink(props) {
+    if (useMediaPredicate('only screen and (max-width: 768px)'))
         return (
-            <span className='tooltip-big' data-tooltip={this.props.name} data-flow='right'>
-                { this.props.children }
-            </span>
+            <div className='sidebar-link-mobile-container'>
+                { props.children }
+                <div>{props.name}</div>
+            </div>
         )
-    }
+
+    return (
+        <span className='tooltip-big' data-tooltip={props.name} data-flow='right'>
+            { props.children }
+        </span>
+    )
 }
 
 export default SidebarLink
