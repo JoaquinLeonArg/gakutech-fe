@@ -9,14 +9,13 @@ export class AboutPage extends React.Component {
   render() {
     return (
       <>
-        <div className='about-container'>
-          <motion.div initial='initial' animate='in' exit='out' variants={pageVariants} style={pageStyle} transition={pageTransition}>
+        <motion.div initial='initial' animate='in' exit='out' variants={pageVariants} style={pageStyle} transition={pageTransition}>
+          <div className='about-container'>
             { profiles.map( profile => (
               <Profile profile={profile}></Profile>
             ))}
-            
-          </motion.div>
-        </div>
+          </div>
+        </motion.div>
         <div className='mobile-footer' />
       </>
     )

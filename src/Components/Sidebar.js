@@ -21,7 +21,7 @@ export class Sidebar extends React.Component {
                         <MdVideogameAsset className='sidebar-icon'></MdVideogameAsset>
                     </Link></SidebarLink>
 
-                    <SidebarLink name='About us'><Link to='/about'>
+                    <SidebarLink name='About'><Link to='/about'>
                         <MdFace className='sidebar-icon'></MdFace>
                     </Link></SidebarLink>
                 </div>
